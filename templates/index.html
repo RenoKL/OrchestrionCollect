@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Orchestrion Collection</title>
+</head>
+<body>
+    <h2>Orchestrion List</h2>
+    <ul>
+        {% for roll in rolls %}
+        <label><input type='checkbox' class='get_value' value={roll[0]}> {{roll['NameCn']}} </label>
+        <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
